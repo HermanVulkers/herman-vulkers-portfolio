@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta & links -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Herman Vulkers - Social Media Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    <!-- JS scripts -->
+    <script src="components/header.js" defer></script>
+    <script src="components/footer.js" defer></script>
+    <script src="components/themeswitcher.js" defer></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#000000" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ff3900" />
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+</head>
+
+<body>
+
+    <header-component></header-component>
+
+    <article>
+        <div class="container">
+            <h1>Project: Social Media Dashboard</h1>
+            <div class="post-meta">
+                <div class="tags">
+                </div>
+                <div class="post-details">Written by <a href="aboutme.html">Herman Vulkers</a> on
+                    <time datetime="2021-12-06">Dec 06</time>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <p>
+                I created this dashboard as a practice project to further develop my CSS Grid, Flexbox and JavaScript skills. This code is the solution to one of the challenges developed by frontendmentor.io. They provided the raw materials, such as the text and the images. I did all of the codework.
+				<br><br>
+				The challenge was to:
+				<br>
+				<ul>
+				<li>View the optimal layout for the site depending on their device's screen size</li>
+				<li>See hover states for all interactive elements on the page</li>
+				<li>Toggle color theme to their preference</li>
+				</ul>
+            </p>
+            <br>
+			<p>
+				Example desktop view:
+			</p>
+            <img src="images/blog-images/social-media-dashboard.png" alt="Screenshot social media dashboard" class="blogimage">
+			<p>
+				The dashboard was made responsive through CSS grid, with the grid shrinking to 2 columns in tablet view and 1 column in mobile view:
+			</p>
+			<img src="images/blog-images/social-media-dashboard-mobile.png" alt="Screenshot social media dashboard mobile" class="blogimage">
+			<p>
+				A dark mode theme switch was added, to allow users to switch to a more eye-friendly experience when needed:
+			</p>
+			<img src="images/blog-images/social-media-dashboard-dark.png" alt="Screenshot social media dashboard dark" class="blogimage">
+
+            <p>
+                This exercise mostly solidified my understanding of CSS Grid and the logic required to make a dark mode theme switcher in JavaScript. The gained knowledge will be carried over to other projects that will use these methods. 
+            </p>
+           
+        </div>
+
+    </article>
+
+    <footer-component></footer-component>
+
+</body>
+
+</html>

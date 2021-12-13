@@ -329,7 +329,7 @@ article button:hover {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
-	flex-direction: row;
+	flex-direction: column;
 }
 
 .post {
@@ -448,12 +448,18 @@ article .container p {
 .projectscontainer {
 	display: -ms-grid;
 	display: grid;
-	max-width: 1350px;
+	max-width: 1000px;
 	grid-gap: 1rem;
 	-ms-grid-columns: 100%;
-	grid-template-columns: repeat(1, 100%);
+	grid-template-columns: repeat(2, 1fr);
 	padding: 24px;
 }
+
+@media only screen and (max-width: 850px) {
+	.projectscontainer {
+		grid-template-columns: repeat(1, 1fr);
+	}
+  }
 
 .project {
 	background-color: rgb(31, 31, 31);
@@ -484,6 +490,12 @@ article .container p {
 .project p {
 	text-align: center;
 }
+
+.project a {
+color: #77a2ff;
+text-decoration: none;
+}
+
 
 .tagbox {
 	display: -webkit-box;
@@ -891,9 +903,6 @@ input[type="email"] {
 }
 
 @media only screen and (max-width: 850px) {
-	.navoption {
-		font-size: 16px;
-	}
 	.flex-header a {
 		margin-right: 1rem;
 	}
@@ -908,5 +917,11 @@ input[type="email"] {
 	}
 	a.post {
 		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.navoption {
+		font-size: 16px;
 	}
 }

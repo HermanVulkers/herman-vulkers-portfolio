@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta & links -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Herman Vulkers - Quote Clock</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet" />
+
+    <!-- JS scripts -->
+    <script src="components/header.js" defer></script>
+    <script src="components/footer.js" defer></script>
+    <script src="components/themeswitcher.js" defer></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#000000" />
+    <link rel="shortcut icon" href="/favicons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#ff3900" />
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+</head>
+
+<body>
+
+    <header-component></header-component>
+
+    <article>
+        <div class="container">
+            <h1>Project: Quote Clock</h1>
+            <div class="post-meta">
+                <div class="tags">
+                </div>
+                <div class="post-details">Written by <a href="aboutme.html">Herman Vulkers</a> on
+                    <time datetime="2021-12-13">Dec 13</time>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <p>
+				I created this app as a practice project to further develop my API integration, JavaScript, HTML and CSS skills. This code is the solution to one of the challenges developed by frontendmentor.io. They provided the raw materials, such as the text and the images. I wrote the code.  
+				<br><br>
+				The challenge was to:
+				<br>
+				<ul>
+					<li>View the optimal layout for the site depending on their device's screen size</li>
+					<li>See hover states for all interactive elements on the page</li>
+					<li>View the current time and location information based on their IP address</li>
+					<li>View additional information about the date and time in the expanded state</li>
+					<li>Be shown the correct greeting and background image based on the time of day they're visiting the site</li>
+					<li>Generate random programming quotes by clicking the refresh icon near the quote</li>
+				</ul>
+            </p>
+            <br>
+			<p>
+				Example desktop view:
+			</p>
+            <img src="images/blog-images/quote-clock.png" alt="Screenshot Quote Clock" class="blogimage">
+		
+			<p>
+				The clock shows the current time in 24 hour notation, refreshed every second. When a minute ends, it is immediately reflected in the adjusted and correct time. The time is shown through a date object that is created locally, once a user visits the app. 
+			</p>
+			<br>
+			<p>
+				A geo location API is used to retrieve the IP address and accompanying location data of the user. The location data is saved into variables and then used to display the users' city and country underneath the clock. The location data is coarse and imprecise, but a nice addition. 
+			</p>
+			<br>
+			<p>
+				The Worldtime API is used to display additional information to the user, under the expandable slider tab:
+			</p>
+			<img src="images/blog-images/quote-clock-slider.png" alt="Screenshot Quote Clock slider" class="blogimage">
+
+			<br>
+			<p>
+				Another feature are the programmer quotes, also fetched through an API. The quotes are fetched on loading of the page, but can also be retrieved by the user, by clicking on the refresh button on the right side of the quote:
+			</p>
+			<img src="images/blog-images/quote-clock-quote.png" alt="Screenshot Quote Clock quote" class="blogimage">
+			<p>
+				The website is responsive and the grid inside the slider adjusts accordingly when the screen size is changed to mobile:
+			</p>
+			<img src="images/blog-images/quote-clock-mobile.png" alt="Screenshot Quote Clock quote" class="blogimage">
+           
+        </div>
+
+    </article>
+
+    <footer-component></footer-component>
+
+</body>
+
+</html>
