@@ -523,9 +523,9 @@ text-decoration: none;
 	font-size: 14px;
 }
 
-.tagbox p:hover {
+/* .tagbox p:hover {
 	border: 1px solid #77a2ff;
-}
+} */
 
 .tagbox a:hover {
 	border: 1px solid #77a2ff;
@@ -636,7 +636,7 @@ body.light-theme .flex-header a {
 
 body.light-theme .post {
 	background-color: rgb(240, 240, 240);
-	border: 1px solid rgb(201, 201, 201);
+	border: 1px solid transparent;
 }
 
 body.light-theme .post h3 {
@@ -692,7 +692,8 @@ body.light-theme .project {
 }
 
 body.light-theme .project h2 {
-	color: #5d7fc9;
+	color: #343434;
+	font-weight: 300;
 }
 
 body.light-theme .project a {
@@ -923,5 +924,8 @@ input[type="email"] {
 @media only screen and (max-width: 500px) {
 	.navoption {
 		font-size: 16px;
+	}
+	#mc_embed_signup form {
+		width: 100%;
 	}
 }
